@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片列表</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reseter.css/2.0.0/reseter.min.css">
+    <style>
+        /* 设置Body的背景颜色 */
+        body {
+            background-color: antiquewhite;
+        }
+        /* 设置外部ul的样式 */
+        .img-list {
+            width: 190px;
+            height: 470px;
+            overflow: hidden;
+
+            /* 使ul在页面中居中 实际示例中不需要这么写 */
+            margin: 50px auto;
+            background-color: #f4f4f4;
+        }
+        /* 设置li的位置 */
+        .img-list li:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        .img-list img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </div> -->
+    <ul class="img-list">
+        <li>
+            <a href="javascript:;">
+                <img src="https://img11.360buyimg.com/babel/s380x300_jfs/t1/181595/29/5122/90113/60a611c2Edbe5dcf2/38aec127b8a2a488.jpg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <img src="https://img12.360buyimg.com/babel/s380x300_jfs/t1/152314/13/19839/57522/603e118dE941f0ce9/fdff58457adbef3e.jpg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <img src="https://img11.360buyimg.com/babel/s380x300_jfs/t1/124193/7/20235/50643/5fc1b453Ede1ff346/4cfd67de0ee4869a.jpg" alt="">
+            </a>
+        </li>
+    </ul>
+</body>
+</html>
