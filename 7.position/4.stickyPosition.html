@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航条</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reseter.css/2.0.0/reseter.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <style>
+        /* 
+            设置nav的大小
+        */
+
+        body {
+            height: 3000px;
+        }
+
+        .nav {
+            width: 1210px; 
+            height: 48px;
+            background-color: #E8E7E3;
+            text-align: center;
+            margin: 100px auto;
+
+            /* 
+                粘滞定位
+                - 当元素的position属性设置为sticky 时刚开启了元素的粘滞定位
+                - 粘滞定位和相对定位的特点基本一致
+                    不同的时粘滞定位可以在元素到达某个位置时将其固定
+            */
+            
+            position: sticky;
+            top: 0;
+        }
+
+        /* 
+            设置nav中li
+        */
+        .nav li {
+             
+            text-decoration: none;
+            display: inline-block; 
+             
+            line-height: 48px;
+            list-style-type: none;
+            
+            
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* 
+        设置a的样式
+        */
+        .nav a {
+            /* 将a转换为块元素 */
+            display: block;
+            height: 48px;
+            text-decoration: none;
+            color: #777777;
+            font-size: 18px;
+            padding: 0 38px;
+            text-align: center;
+        }
+
+        /* 设置鼠标移入的效果 */
+        .nav a:hover {
+            background-color: #3F3F3F;
+            color: #E8E7E3;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 
+        创建导航条的结构
+     -->
+    <ul class="nav">
+        <li>
+            <a href="#">HTML/CSS</a>
+        </li>
+        <li>
+            <a href="#">Browser Side</a>
+        </li>
+        <li>
+            <a href="#">Server Side</a>
+        </li>
+        <li>
+            <a href="#">Programming</a>
+        </li>
+        <li>
+            <a href="#">XML</a>
+        </li>
+        <li>
+            <a href="#">Web Building</a>
+        </li>
+        <li>
+            <a href="#">Reference</a>
+        </li>
+    </ul>
+</body>
+</html>
