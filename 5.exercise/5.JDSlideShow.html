@@ -12,6 +12,10 @@
             height: 470px;
             margin: 100px auto;
 
+            /* 
+            为ul开启相对定位，目的是使ul中的point可以相对于ul定位
+            */
+            position: relative;
         }
 
         /* 设置li */
@@ -25,11 +29,32 @@
         }
 
         /* 设置导航点的样式 */
-        .pointer a {
-            width: 20px;
-            height: 20px;
-            background-color: red;
+        .pointer {
+            position: absolute;
+            z-index: 9999;
+            bottom: 20px;
+            left: 40px;
         }
+
+        /* 设置导航点的样式 */
+        .pointer a {
+            /* 设置元素向左浮动 */
+            float: left;
+            width: 10px;
+            height: 10px;
+            margin: 0px 4px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.6);
+            background-clip: content-box;
+            border: 2px solid transparent;
+        }
+
+        .pointer a.active,
+        .pointer a:hover {
+            background-color: #fff;
+            border: 2px solid rgba(255, 255, 255, 0.6);
+        }
+
     </style>
 </head>
 <body>
@@ -43,7 +68,7 @@
         <li><a href="javscript:;"><img src="./img/7.jpg" alt=""></a></li>
         <li><a href="javscript:;"><img src="./img/8.jpg" alt=""></a></li>
         <div class="pointer">
-            <a href="javascripte:;"></a>
+            <a class="active" href="javascripte:;"></a>
             <a href="javascripte:;"></a>
             <a href="javascripte:;"></a>
             <a href="javascripte:;"></a>
