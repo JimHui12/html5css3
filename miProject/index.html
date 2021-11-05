@@ -7,14 +7,20 @@
     <title>
         小米商城 - Xiaomi 11 Ultra、Redmi K40 Pro、MIX FOLD，小米电视官方网站
     </title>
+    <!-- p101-p115 -->
     <!-- 重制样式表 -->
     <link rel="stylesheet" href="./css/reset.min.css">
     <!-- 公共的样式表 -->
     <link rel="stylesheet" href="./css/base.css">
     <!-- 图标字体库 -->
-    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
     <!-- 当前页面的样式表 -->
-    <link rel="stylesheet" href="./css/index.css">    
+    <link rel="stylesheet" href="./css/index.css"> 
+    <!-- 
+        设置网站的图标，在标题栏和收藏栏
+            - 网站图片一般都存储在网站的根目录下，名字一般都叫做 favicon.icon
+     -->
+    <link rel="icon" href="./favicon.ico">
 </head>
 <body>
     <!-- 顶部导航条 -->
@@ -231,6 +237,68 @@
                 <a class="next" href="javascript:;"></a>
             </div>
         </div>
+    </div>
+
+    <!-- 固定定位的工具条 -->
+    <div class="back-top"></div>
+
+    <!-- 创建广告容器 -->
+    <div class="ad w">
+        <ul class="shortcut">
+            <li >
+                <a href="#">
+                    <img src="./img/clock.png" alt="">
+                    小米秒杀
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/building.png" alt="">
+                    企业团购
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/fCode.png" alt="">
+                    F码通道
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/simCard.png" alt="">
+                    米粉卡
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/trade.png" alt="">
+                    以旧换新
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/recharge.png" alt="">
+                    话费充值
+                </a>
+            </li>
+        </ul>
+        <ul class="imgs">
+            <li>
+                <a href="">
+                    <img src="./img/xiaomi1.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/xiaomi2.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/xiaomi3.jpeg" alt="">
+                </a>
+            </li>
+        </ul>
     </div>
 
 </body>

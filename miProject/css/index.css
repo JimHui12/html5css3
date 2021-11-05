@@ -407,3 +407,117 @@ ul.left-menu li a:hover {
     right: 0;
     background-position: -42px 0;
 }
+
+/* 设置回到顶部的元素 */
+.back-top {
+    width: 26px;
+    height: 206px;
+    background-color: orange;
+    /* 开启固定定位 */
+    position: fixed;
+    bottom: 60px;
+    right: 50%;  
+    margin-right: -639px;
+    /* 将right值设置为视口宽度的50% */
+    /* 
+        布局的等式
+            left + margin-left + width + margin-right + right = 窗口的宽度
+            auto + 0 + 26 + 0 + 60 = 视口宽度
+            auto + 0 + 26 + 0 + 50% = 视口宽度
+            auto + 0 + 26 + -639px + 50% = 视口宽度
+            */
+}
+
+/* 设置下部的广告区域 */
+.ad {
+    height: 170px;
+    margin-top: 14px;
+}
+
+.ad .shortcut,
+.ad .imgs,
+.ad li {
+    float: left;
+}
+
+
+/* 设置左侧快捷方式 */
+.ad .shortcut {
+    width: 228px;
+    height: 168px;
+    background-color: #5f5750;
+    margin-right: 14px;
+    padding-top: 2px;
+    padding-left: 6px;
+}
+
+.ad .shortcut li {
+    position: relative;
+    float: left;
+    width: 70px;
+    height: 82px;
+    padding: 0 3px;
+}
+
+.ad .shortcut a:hover {
+    opacity: 1;
+}
+
+/* 设置快捷方式中的超连接 */
+.ad .shortcut a {
+    display: block;
+    color: #cfccca;
+    text-align: center;
+    padding-top: 18px;
+    font-size: 12px;
+    opacity: .7;
+    transition: opacity .2s;
+}
+
+/* 设置上边框 */
+.ad .shortcut li::before {
+    content: '';
+    position: absolute;
+    width: 64px;
+    height: 1px;
+    background-color: #68625e;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+}
+
+.ad .shortcut li::after {
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 1px;
+    background-color: #68625e;
+    top: 6px;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+/* 设置图片字体 */
+.ad .shortcut img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto 4px;
+}
+
+/* 设置左侧的图片 */
+.ad .imgs li {
+    width: 316px;
+    margin-right: 15px;
+}
+
+.ad .imgs li:last-child {
+    margin: 0;
+}
+
+.ad .imgs img {
+    width: 100%;
+    vertical-align: top;
+}
